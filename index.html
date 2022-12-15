@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  
+  <title>asciimo - create awesome ascii art with javascript! works in the browser or node.js</title>
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+  <div id="container">
+    <div>
+      <input class="box button-55" id="theCode"  type="text" placeholder="Type here">
+    </div>
+    
+      <div id="asciiArt" class="box">
+        <!-- <pre></pre> -->
+        <textarea id="outputText" class="button-50" name="output"></textarea>
+      </div>
+      <div>
+        <input type="button" class = "button-50" id="random" name="rendom" value="random" onclick="rendomfont()"/>
+        <input type="button" class = "button-50" id="copyId" name="Copy" value="Copy" onclick="copyText()"/>
+      </div>
+      
+      <div>
+        <input type="button" class = "button-50" id="pre" name="pre" value="<<" onclick="prefont()"/>
+        <select id="fontSelector" class = "button-55" name="fontSelector"></select>
+        <input type="button" class = "button-50" id="next" name="next" value=">>" onclick="nextfont()"/>
+      </div>
+      
+  </div>
+  
+
+
+
+  <script type="text/javascript" src="./lib/asciimo.js"></script>
+  <script type="text/javascript" src="./lib/fonts.js"></script>
+  <script type="text/javascript" src="./lib/jquery.js"></script>
+  <script type="text/javascript" src="./lib/debug.js"></script>
+  <script type="text/javascript" src="/script.js"></script>
+</body>
+
+</html>
